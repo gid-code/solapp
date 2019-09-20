@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/darkorange"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gidtech.android.mynavdraw.activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launch"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="26dp"
+        android:textColor="@color/windowBackground"
+        android:inputType="phone"
+        android:hint="@string/reg_hint"
+        android:typeface="serif"
+        android:ems="10"
+        android:id="@+id/regNum" />
+
+    <Button
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="regMethod"
+        android:id="@+id/regBtn" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AlertDialogLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:weightSum="1"
+            android:id="@+id/radioG">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="SOLAR"
+                android:id="@+id/solarBtn"
+                android:typeface="sans"
+                android:checked="true"
+                android:textSize="20sp"
+                android:fontFamily="monospace" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/gridBtn"
+                android:text="GRID"
+                android:typeface="sans"
+                android:checked="false"
+                android:textSize="20sp"
+                android:fontFamily="monospace" />
+        </RadioGroup>
+    </android.support.v7.widget.AlertDialogLayout>
+
+</android.support.v7.widget.AlertDialogLayout>

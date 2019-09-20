@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textSize="25sp"
+                android:fontFamily="serif"
+                tools:text="SOLAR ON"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+
+        <ImageView
+                android:id="@+id/img_src"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/source_image"
+                tools:src="@drawable/solar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/solarV"
+            android:text="@string/solar_voltage"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+    <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/solarVV"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:text="240"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/solarVU"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:text="@string/unit_volt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+    <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridV"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:text="@string/grid_voltage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+    <TextView
+            android:layout_width="125dp"
+            android:textAlignment="viewEnd"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridVV"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:text="240" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_volt"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+    <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/power"
+            android:text="@string/power"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+    <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/powerV"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:text="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_power"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/energy"
+            android:text="@string/energy"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/energyV"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:text="500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_energy"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

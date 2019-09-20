@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    tools:context="com.gidtech.android.mynavdraw.fragment.ControlsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/radioG">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SOLAR"
+            android:id="@+id/solarBtn"
+            android:typeface="sans"
+            android:checked="true"
+            android:textSize="20sp"
+            android:fontFamily="monospace" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/gridBtn"
+            android:text="GRID"
+            android:typeface="sans"
+            android:checked="false"
+            android:textSize="20sp"
+            android:fontFamily="monospace" />
+    </RadioGroup>
+
+</LinearLayout>

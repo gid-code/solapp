@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Phone Number"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/reg_label"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_reg"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/reg_value"
+            android:layout_height="wrap_content"
+            tools:text="0502211444"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_entry"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="@string/settings_hint"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regBttn"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:typeface="serif"/>
+
+</LinearLayout>
